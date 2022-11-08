@@ -5,13 +5,13 @@ import { HeaderContainer, SelectUsers, HeaderIcons, ProfilePhoto, Icons, Select 
 
 
 function Header(props) {
-    const { senders, currSenders, onChangeSender } = props
+    const { senders, currSender, onChangeSender } = props
     return (
         <HeaderContainer >
             <SelectUsers>
-                <ProfilePhoto src="https://picsum.photos/50" alt="Profile photo" />
+                <ProfilePhoto src={`https://picsum.photos/seed/${currSender}/50`} alt="Profile photo" />
                 <div>
-                    <Select value={currSenders} onChange={onChangeSender}>
+                    <Select value={currSender} onChange={onChangeSender}>
                         {senders.map((sender) => (
                             <option key={sender} value={sender}>{sender}
                             </option>
