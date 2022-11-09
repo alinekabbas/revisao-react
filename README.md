@@ -1,5 +1,3 @@
-# revisao-react
-
 # Projeto para revisão do conteúdo de react
 Turma Ammal em 11/2022
 
